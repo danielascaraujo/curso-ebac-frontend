@@ -2,6 +2,8 @@ const form = document.getElementById('form-numeros');
 const campoA = document.getElementById('campo-a');
 const campoB = document.getElementById('campo-b');
 let formEhValido = false;
+formEhValido = campoA.value < campoB.value
+
 
 
 form.addEventListener('submit', function(e) {
@@ -27,31 +29,23 @@ form.addEventListener('submit', function(e) {
 
 campoA.addEventListener('keyup', function(e) {
     console.log(e.target.value);
-    formEhValido = campoA.value < campoB.value
-
 
     if (!formEhValido) {
         campoA.classList.add('error');
-        campoB.classList.add('error');
         document.querySelector('.error-message').style.display = 'block';
     } else {
         campoA.classList.remove('error');
-        campoB.classList.remove('error');
         document.querySelector('.error-message').style.display = 'none';
     }
 });
 
 campoB.addEventListener('keyup', function(e) {
     console.log(e.target.value);
-    formEhValido = campoA.value < campoB.value
-
 
     if (!formEhValido) {
-        campoA.classList.add('error');
         campoB.classList.add('error');
         document.querySelector('.error-message').style.display = 'block';
     } else {
-        campoA.classList.remove('error');
         campoB.classList.remove('error');
         document.querySelector('.error-message').style.display = 'none';
     }
