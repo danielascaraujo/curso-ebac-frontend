@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC - Exercício Módulo 09 - JQuery</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <button type="button">Nova tarefa +</button>
+    </header>
+    <form id="form-lista">
+        <h2>Inserir nova tarefa</h2>
+        <input type="text"  id="tarefa" placeholder="Insira a tarefa">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <div class="minha-lista">
+        <ul></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+    <style>
+        /* Estilo para adicionar line-through ao texto */
+        .line-through {
+            text-decoration: line-through;
+        }
+        </style>
+</body>
+
+</html>
