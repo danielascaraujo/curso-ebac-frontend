@@ -37,7 +37,7 @@ header {
         margin-left: 24px;
 
         a {
-            color: variaveis.$CorPrimaria;
+            color: variaveis.$corPrimaria;
             text-decoration: none;
         }
     }
@@ -63,8 +63,8 @@ section {
 
     .product-button {
         display: block;
-        background-color: variaveis.$CorDeBotao;
-        color: variaveis.$CorPrimaria;
+        background-color: variaveis.$corDeBotao;
+        color: variaveis.$corPrimaria;
         text-align: center;
         padding: 8px 0;
         border-radius: 8px;
@@ -72,7 +72,7 @@ section {
         text-decoration: none;
 
         &:hover {
-            background-color: lighten(variaveis.$CorDeBotao, 10%);
+            background-color: lighten(variaveis.$corDeBotao, 10%);
         }
     }
 }
